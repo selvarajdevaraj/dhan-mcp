@@ -36,7 +36,7 @@ dhan-mcp
 
 Run the server with:
 ```bash
-python server.py
+dhan-mcp
 ```
 
 ## Tools
