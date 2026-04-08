@@ -195,5 +195,9 @@ def renew_access_token() -> dict:
     response = requests.post(url, headers=headers)
     return response.json()
 
-if __name__ == "__main__":
+def main():
+    """Main entry point for the MCP server."""
     mcp.run(transport="stdio")
+
+if __name__ == "__main__":
+    main()

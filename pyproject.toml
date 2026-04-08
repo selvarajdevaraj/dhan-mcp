@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dhan-mcp-full"
+version = "1.0.0"
+description = "Comprehensive MCP server for DhanHQ v2 API with 15+ tools"
+readme = "README.md"
+authors = [{ name = "Selvaraj Devaraj", email = "selvarajdevaraj@example.com" }]
+dependencies = [
+    "fastmcp>=2.13.0",
+    "dhanhq>=2.1.0",
+    "requests>=2.28.0",
+    "python-dotenv>=1.1.0",
+]
+requires-python = ">=3.9"
+
+[project.scripts]
+dhan-mcp = "dhan_mcp:main"
+
+[tool.setuptools.py-modules]
+dhan_mcp = ["dhan_mcp"]
