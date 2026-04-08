@@ -19,5 +19,5 @@ requires-python = ">=3.9"
 [project.scripts]
 dhan-mcp = "dhan_mcp:main"
 
-[tool.setuptools.py-modules]
-dhan_mcp = ["dhan_mcp"]
+[tool.setuptools]
+py-modules = ["dhan_mcp"]
