@@ -16,7 +16,7 @@ A comprehensive Model Context Protocol (MCP) server for the DhanHQ v2 API. This 
 ### Via Pip (Recommended)
 
 ```bash
-pip install git+https://github.com/selvarajdevaraj/dhan.git
+pip install git+https://github.com/selvarajdevaraj/dhan-mcp.git
 ```
 
 After installation, you can run the server using:
