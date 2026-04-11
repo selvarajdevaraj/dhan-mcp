@@ -74,17 +74,46 @@ uv run --with dhanhq --with fastmcp --with python-dotenv --with yfinance --with 
 
 ## Usage with opencode
 
+### Option 1: Using uv (recommended)
 ```json
 {
   "mcp": {
     "dhan": {
       "type": "local",
-      "command": ["conda", "run", "-n", "py311", "python", "path/to/dhan_mcp.py"],
+      "command": ["uv", "run", "--with", "dhanhq", "--with", "fastmcp", "--with", "python-dotenv", "--with", "yfinance", "--with", "requests", "python", "path/to/dhan_mcp.py"],
       "enabled": true
     }
   }
 }
 ```
+
+### Option 2: Using conda
+```json
+{
+  "mcp": {
+    "dhan": {
+      "type": "local",
+      "command": ["conda", "run", "-n", "your_env_name", "python", "path/to/dhan_mcp.py"],
+      "enabled": true
+    }
+  }
+}
+```
+
+### Option 3: Using virtual env
+```json
+{
+  "mcp": {
+    "dhan": {
+      "type": "local",
+      "command": ["path/to/venv/Scripts/python.exe", "path/to/dhan_mcp.py"],
+      "enabled": true
+    }
+  }
+}
+```
+
+Replace `your_env_name` with your conda environment name, or `path/to/dhan_mcp.py` with the actual path.
 
 ## Security Notes
 
