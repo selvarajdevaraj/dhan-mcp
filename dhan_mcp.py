@@ -7,7 +7,7 @@ mcp = FastMCP(name="DhanHQ Full MCP Server")
 
 def get_client():
     from dotenv import load_dotenv
-    load_dotenv('E:/Claude Trader/.env')
+    load_dotenv('YOUR_PATH/.env')
     DHAN_CLIENT_ID = os.getenv("DHAN_CLIENT_ID")
     DHAN_ACCESS_TOKEN = os.getenv("DHAN_ACCESS_TOKEN")
     if not DHAN_CLIENT_ID or not DHAN_ACCESS_TOKEN:
